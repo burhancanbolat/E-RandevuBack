@@ -1,6 +1,12 @@
 @E_Randevu_HostAddress = http://localhost:5172
 
-GET {{E_Randevu_HostAddress}}/weatherforecast/
+POST http://localhost:5172/api/Auth/Login
 Accept: application/json
+Content-Type: application/json
 
+{
+  "userNameOrEmail": "admin",
+  "password": "1"
+
+}
 ###
