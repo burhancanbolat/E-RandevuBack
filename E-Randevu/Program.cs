@@ -32,9 +32,11 @@ namespace E_Randevu
                 app.UseSwaggerUI();
             }
 
-            app.UseCors();
+            
 
             app.UseHttpsRedirection();
+
+            app.UseCors();
 
             app.UseAuthorization();
 
