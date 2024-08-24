@@ -1,6 +1,10 @@
 ﻿using AutoMapper;
 using E_RandevuApplication.Features.Doctors.CreateDoctor;
 using E_RandevuApplication.Features.Doctors.UpdateDoctor;
+using E_RandevuApplication.Features.Patients.CreatePatient;
+using E_RandevuApplication.Features.Patients.UptadePatient;
+using E_RandevuApplication.Features.Users.CreateUser;
+using E_RandevuApplication.Features.Users.UpdateUser;
 using E_RandevuDomain.Entities;
 using E_RandevuDomain.Enums;
 
@@ -18,5 +22,13 @@ public sealed class MappingProfile:Profile
         {
             options.MapFrom(map => DepartmentEnum.FromValue(map.Department));
         });
+
+        CreateMap<CreatePatientCommand, Patient>();
+        CreateMap<UpdatePatientCommand, Patient>();
+
+        CreateMap<CreateUserCommand, AppUser>();
+        CreateMap<UpdateUserCommand, AppUser>();
+
+
     }
 }

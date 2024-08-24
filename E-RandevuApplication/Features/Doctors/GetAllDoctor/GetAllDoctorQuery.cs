@@ -4,4 +4,4 @@ using TS.Result;
 
 namespace E_RandevuApplication.Features.Doctors.GetAllDoctor;
 
-public sealed record class GetAllDoctorQuery():IRequest<Result<List<Doctor>>>;
+public sealed record  GetAllDoctorQuery():IRequest<Result<List<Doctor>>>;

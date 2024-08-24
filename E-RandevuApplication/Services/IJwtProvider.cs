@@ -9,5 +9,5 @@ namespace E_RandevuApplication.Services;
 
 public  interface IJwtProvider
 {
-    string CreateToken(AppUser user);
+    Task<string> CreateTokenAsync(AppUser user);
 }
